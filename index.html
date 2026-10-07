@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limbusle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1><img src="logo.png" alt="Icon" class="title-icon"> Limbusle</h1>
+        </header>
+
+        <div id="board"></div>
+        <div id="message"></div>
+
+        <div id="selector-title">Available Sinners</div>
+        <div id="image-deck"></div>
+
+        <div id="controls">
+            <button class="action-btn btn-back" id="btn-back">BACKSPACE</button>
+            <button class="action-btn btn-submit" id="btn-submit">SUBMIT</button>
+        </div>
+
+        <!-- Share Result Modal -->
+        <div id="share-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="modal-title">Game Over!</h2>
+                <pre id="share-text"></pre>
+                <div class="modal-buttons">
+                    <button id="btn-copy" class="action-btn btn-copy-style">COPY RESULT</button>
+                    <button id="btn-close" class="action-btn btn-back">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
