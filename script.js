@@ -197,7 +197,9 @@ function processGuess(guessArray) {
             }).join(" > ");
         }
 
-        const formattedShare = `Limbusle ${attemptsText}\n${today}\n\n${historyEmojis.join("\n")}`;
+        const siteUrl = window.location.href;
+
+        const formattedShare = `Limbusle ${attemptsText}\n${today}\n${historyEmojis.join("\n")}\n\nPlay today's puzzle at ${siteUrl}`;
         modalTitle.textContent = isWin ? "how wild" : "Fate Larped.";
         shareText.textContent = formattedShare;
         shareModal.classList.remove("hidden");
